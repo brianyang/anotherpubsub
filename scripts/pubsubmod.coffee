@@ -1,11 +1,3 @@
-# Event Drive Application Architecture
-#* @BrianYang
-#* http://brianyang.com/
-#*
-#* Pub/Sub implementation pattern borrowed from http://addyosmani.com/
-#* Licensed under the GPL
-
-#
 ((window, doc, undef) ->
   topics = {}
   subUid = -1
