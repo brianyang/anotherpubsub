@@ -1,8 +1,13 @@
 
 # Todo Application with Pubber
 
-able to.. create lists, remove items
-waiting to.. check off items, and clear completed
+## able to
+* create lists
+* remove items
+
+## waiting to
+* check off items
+* clear completed
 
 
 # Motivations
