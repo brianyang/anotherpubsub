@@ -29,7 +29,10 @@ pubber(customEventName, argument)
 # examples
 
 ## subscribe to newSignup events and pass an argument
-### this creates a subscription and publishes the argument
+This creates a subscription to a custom event name and passes an
+argument to be evaluated when subscribed. Invoking pubber will create a
+subscription and then publish to ensure the subscription reaches the
+subscriber.
 
 ```coffeescript
 pubber newSignup
