@@ -1,3 +1,7 @@
+# Pubber Event Driven Application Framework
+
+An observer-like implementation facilitating a network of susbcriptions
+for event-driven architectures.
 
 # Todo Application with Pubber
 
