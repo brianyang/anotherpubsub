@@ -13,18 +13,16 @@ logger = (topics,data) ->
   console.log data
 
 app.create = (event) ->
-  app.total = pb.subscribe event || 'all', logger if !app.subscribed
-  console.log 'already subscribed!' if app.subscribed
-  app.subscribed = 1
+  app.total = pb.subscribe(event,logger) if !app.subscribed
 
 app.read = (event, obj) ->
-  pb.publish event || 'all', obj || 'msg'
+  pb.publish(event, obj)
 
 app.update = (event,pubval) ->
-  pb.publish event || 'all', pubval
+  pb.publish(event,pubval)
 
 app.del = (event) ->
-  pb.unsubscribe event || 'all'
+  pb.unsubscribe event
 
 
 app.pubber = (event, arg) ->
