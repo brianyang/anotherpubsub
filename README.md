@@ -20,7 +20,11 @@ for event-driven architectures.
 * loose coupling
 
 
-# usage: pubber(customEventName, argument)
+# usage:
+```coffeescriptxxx
+pubber(customEventName, argument)
+```
+
 
 # examples
 
