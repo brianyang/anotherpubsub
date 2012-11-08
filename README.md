@@ -28,7 +28,7 @@ pubber(customEventName, argument)
 
 # examples
 
-## subscribe to newSignup events and pass an argument
+## Subscribing to custom events and expected arguments
 This creates a subscription to a custom event name and passes an
 argument to be evaluated when subscribed. Invoking pubber will create a
 subscription and then publish to ensure the subscription reaches the
@@ -39,8 +39,8 @@ pubber newSignup
 	action:'notify'
 ```
 
-## unsubscribe from newSignup events
-
+## unsubscribe from custom event
+Cancel all subscriptions to the specified event name.
 ```coffeescript
 app.pubber.revoke newSignup
 ```
