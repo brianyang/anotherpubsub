@@ -412,3 +412,6 @@ label[for='toggle-all'] {
 .hidden{
 	display:none;
 }
+#todo-list input{
+  display:none;
+}

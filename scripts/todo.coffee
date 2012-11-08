@@ -1,22 +1,29 @@
 console.log 'console init'
 
-addItem = ->    
+addItem = ->
     todoValue = document.getElementById('new-todo').value
     todoListingTpl = ich.todoItemTpl(todoValue)
     todoList = document.getElementById('todo-list')
     todoValue = $('#new-todo').val()
     todoList = $('#todo-list')
-    
+
     todoTpl = ich.todoItemTpl
         todoText:todoValue
-        
+
     $(todoList).append(todoTpl)
-    
+
 clearInput = ->
     $('#new-todo').val ''
 
-pubberInit = ->
-    app.pubber 'newItem', addItem()
+todoRemove = ->
+  $('#todo-list').on 'click','.destroy', (e) ->
+    console.log $(e.target).parent().parent()
+    $(e.target).parent().parent().remove()
+todoRemove()
+
+
+#pubberInit = ->
+    #app.pubber 'newItem', addItem()
 # pubberInit()
 
 
